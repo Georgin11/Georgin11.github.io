@@ -104,6 +104,12 @@ nav ul li a {
     padding: 0;
 }
 
+.our-team {
+    background-image: url('images/gray-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .team-members {
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +124,7 @@ nav ul li a {
 .team-member img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    object-fit: cover;
 }
 
 form {
