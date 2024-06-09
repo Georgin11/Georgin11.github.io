@@ -22,11 +22,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">Our Team</a></li>
+                <li><a href="#services-prices">Pricing</a></li>
+                <li><a href="#location-hours">Contact Us</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#our-team">Our Team</a></li>
             </ul>
         </nav>
     </header>
@@ -35,11 +34,11 @@
             <img src="images/hero-image.jpg" alt="Barber tools">
             <div class="hero-text">
                 <h2>Razor Sharp</h2>
-                <button>BOOK AN APPOINTMENT</button>
+                <button onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });">BOOK AN APPOINTMENT</button>
             </div>
         </section>
         <hr>
-        <section class="services-prices">
+        <section id="services-prices" class="services-prices">
             <h2>Services and Prices</h2>
             <div class="service-item">
                 <p>Adult Haircut</p>
@@ -55,7 +54,7 @@
             </div>
         </section>
         <hr>
-        <section class="our-team">
+        <section id="our-team" class="our-team">
             <h2>Our Team</h2>
             <div class="team-members">
                 <div class="team-member">
@@ -85,7 +84,7 @@
             </div>
         </section>
         <hr>
-        <section class="booking">
+        <section id="booking" class="booking">
             <h2>Book an Appointment</h2>
             <form>
                 <label for="barber">Select a Barber</label>
@@ -117,16 +116,16 @@
             </form>
         </section>
         <hr>
-        <section class="about-us">
+        <section id="about-us" class="about-us">
             <h2>About Us</h2>
             <p>Welcome to Razor Sharp Barber Shop, your trusted grooming destination for 15 years! Our experienced barbers specialize in timeless styles and modern trends, ensuring every cut is sharp and every shave is smooth. At Razor Sharp, we pride ourselves on offering affordable services without compromising on quality. Conveniently located and wheelchair accessible, our welcoming atmosphere makes every visit enjoyable. Whether you need a quick trim or a complete makeover, we’re here to keep you looking your best. Come experience the tradition and skill that have made us a community favourite for over a decade.</p>
         </section>
         <hr>
-        <section class="location-hours">
+        <section id="location-hours" class="location-hours">
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0430242205603!2d-79.20892482385872!3d43.813466971094954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d75341a06e95%3A0x2b714058eb60d07e!2s1834%20Morningside%20Ave%2C%20Scarborough%2C%20ON%20M1B%205A8!5e0!3m2!1sen!2sca!4v1717973937182!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>           
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.7261287810053!2d-79.2329163845019!3d43.80349857911686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3a53f62b2b5%3A0xb6ff7b0ff45b8e4c!2s1834%20Morningside%20Rd%2C%20Scarborough%2C%20ON%20M1X%201V7%2C%20Canada!5e0!3m2!1sen!2sus!4v1688995604984!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-           <div class="hours">
+            <div class="hours">
                 <h2>Our Hours</h2>
                 <div class="hour-item">
                     <p>Mon-Fri: 9AM-6PM</p>
@@ -137,7 +136,7 @@
                 <div class="hour-item">
                     <p>Sunday: CLOSED</p>
                 </div>
-    </div>
+            </div>
         </section>
     </main>
     <footer>
