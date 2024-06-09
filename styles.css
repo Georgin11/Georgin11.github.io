@@ -60,18 +60,26 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero-text h2 {
-    font-size: 3em;
+    font-size: 4em;
+    margin-bottom: 20px;
 }
 
 .hero-text button {
-    background-color: #444;
+    background-color: transparent;
     color: white;
-    padding: 10px 20px;
-    border: none;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 1.5em;
     cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .location-hours {
