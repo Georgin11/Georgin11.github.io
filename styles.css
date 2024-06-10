@@ -331,9 +331,33 @@ hr {
     background-color: #555;
 }
 
-form .confirmation {
+.confirmation-popup {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.confirmation-content {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.confirmation-message {
+    font-size: 1.5em;
     color: green;
-    font-weight: bold;
+}
+
+.confirmation-text {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.confirmation-email {
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
 .social-icons {
