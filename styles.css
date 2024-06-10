@@ -297,7 +297,7 @@ footer p {
 }
 
 .details-section form {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
