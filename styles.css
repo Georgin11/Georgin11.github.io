@@ -374,3 +374,13 @@ hr {
 .social-icons a {
     margin: 0 10px;
 }
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+}
+
+.social-icons img[alt="YouTube"] {
+    width: 40px;
+    height: auto;
+}
