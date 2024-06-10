@@ -1,29 +1,44 @@
-/* Add or update the following styles in styles.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
     background-color: #333;
-    color: white;
-    padding: 10px 0;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    width: 100%;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    flex: 1;
+    text-align: center;
+}
+
+.header-center h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3em;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    margin: 0;
 }
 
 nav ul li {
@@ -31,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -51,33 +66,103 @@ nav ul li a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero-text h2 {
-    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 6em;
+    margin-bottom: 20px;
 }
 
 .hero-text button {
     background-color: transparent;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border: 2px solid white;
     border-radius: 25px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .hero-text button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.services-prices {
-    padding: 40px;
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.location-hours {
+    display: flex;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#map {
+    flex: 1;
+    height: 450px;
+    max-width: 50%;
+}
+
+.hours {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+    max-width: 50%;
+}
+
+.hours h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.hour-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.about-us p {
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.services-prices,
+.our-team,
+.booking {
+    padding: 20px;
     text-align: center;
 }
 
-.services-prices h2 {
+.services-prices h2,
+.our-team h2,
+.booking h2 {
     margin-bottom: 20px;
 }
 
@@ -97,13 +182,10 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 40px;
-    text-align: center;
 }
 
 .our-team h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
 }
 
 .team-members {
@@ -202,13 +284,11 @@ nav ul li a {
 
 .appointment-calendar select,
 .appointment-calendar .calendar,
-.appointment-calendar .time-slots,
-.appointment-calendar input[type=number],
-.appointment-calendar input[type=date] {
+.appointment-calendar .time-slots {
     display: block;
     margin: 10px auto;
     width: 80%;
-    padding: 10px;
+    padding: 20px;
     font-size: 1.5em;
 }
 
@@ -277,74 +357,25 @@ nav ul li a {
 
 .confirmation-email {
     font-size: 1.1em;
-    padding: 5px;
-    width: 80%;
-    margin: 10px 0;
-}
-
-.confirmation-content button {
-    background-color: #444;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.confirmation-content button:hover {
-    background-color: #555;
-}
-
-.about-us {
-    padding: 40px;
-    text-align: center;
-}
-
-.about-us h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.about-us p {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.location-hours {
-    padding: 40px;
-    text-align: center;
-}
-
-.location-hours h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.location {
-    margin-bottom: 20px;
-}
-
-.hours {
-    font-size: 1.2em;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer .social-icons {
-    display: flex;
-    justify-content: center;
     margin-bottom: 10px;
 }
 
-footer .social-icons a {
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.social-icons a {
     margin: 0 10px;
 }
 
-footer p {
-    margin: 0;
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.social-icons img[alt="YouTube"] {
+    width: 30px;
+    height: auto;
 }
