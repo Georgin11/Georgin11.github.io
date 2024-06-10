@@ -139,7 +139,25 @@ hr {
     text-align: right;
 }
 
-.about-us,
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.about-us p {
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
 .services-prices,
 .our-team,
 .booking {
@@ -148,7 +166,6 @@ hr {
 }
 
 .services-prices h2,
-.about-us h2,
 .our-team h2,
 .booking h2 {
     margin-bottom: 20px;
