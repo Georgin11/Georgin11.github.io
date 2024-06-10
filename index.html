@@ -150,7 +150,7 @@
             </div>
             <div class="details-section">
                 <h3>Enter Your Details</h3>
-                <form>
+                <form onsubmit="showConfirmationPopup(); return false;">
                     <label for="firstname">First name</label>
                     <input type="text" id="firstname" name="firstname" placeholder="Jane">
                     <label for="lastname">Last name</label>
@@ -163,9 +163,17 @@
                 </form>
             </div>
         </section>
+        <div id="confirmation-popup" class="confirmation-popup">
+            <div class="confirmation-content">
+                <p class="confirmation-message">A Confirmation Has Been Sent</p>
+                <p class="confirmation-text">Please confirm the appointment in your inbox</p>
+                <p class="confirmation-email">email@figmasfakedomain.net</p>
+                <button onclick="closeConfirmationPopup()">Resend Confirmation</button>
+            </div>
+        </div>
         <hr>
         <section id="about-us" class="about-us">
-            <h2>About Us</h2>
+            <h2>~ About Us ~</h2>
             <p>Welcome to Razor Sharp Barber Shop, your trusted grooming destination for 15 years! Our experienced barbers specialize in timeless styles and modern trends, ensuring every cut is sharp and every shave is smooth. At Razor Sharp, we pride ourselves on offering affordable services without compromising on quality. Conveniently located and wheelchair accessible, our welcoming atmosphere makes every visit enjoyable. Whether you need a quick trim or a complete makeover, we’re here to keep you looking your best. Come experience the tradition and skill that have made us a community favourite for over a decade.</p>
         </section>
         <hr>
@@ -207,6 +215,14 @@
 
         function closePopup(id) {
             document.getElementById('popup-' + id).style.display = 'none';
+        }
+
+        function showConfirmationPopup() {
+            document.getElementById('confirmation-popup').style.display = 'block';
+        }
+
+        function closeConfirmationPopup() {
+            document.getElementById('confirmation-popup').style.display = 'none';
         }
     </script>
 </body>
