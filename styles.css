@@ -193,9 +193,19 @@ hr {
     height: auto;
 }
 
-.team-member p {
+.team-member button {
+    background-color: transparent;
     color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
     font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.team-member button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 form {
