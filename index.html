@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razor Sharp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,27 +30,28 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <img src="images/hero-image.jpg" alt="Barber tools">
-        <div class="hero-text">
-            <h2>Razor Sharp</h2>
-            <button onclick="document.getElementById('booking-section').scrollIntoView()">BOOK AN APPOINTMENT</button>
-        </div>
-    </section>
     <main>
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="Barber tools">
+            <div class="hero-text">
+                <h2>Razor Sharp</h2>
+                <button onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });">BOOK AN APPOINTMENT</button>
+            </div>
+        </section>
+        <hr>
         <section id="services-prices" class="services-prices">
             <h2>Services and Prices</h2>
             <div class="service-item">
                 <p>Adult Haircut</p>
-                <p>$40</p>
+                <p>40$</p>
             </div>
             <div class="service-item">
                 <p>Youth Haircut</p>
-                <p>$30</p>
+                <p>30$</p>
             </div>
             <div class="service-item">
                 <p>Adult Haircut & Grooming</p>
-                <p>$60</p>
+                <p>60$</p>
             </div>
         </section>
         <hr>
@@ -57,74 +59,75 @@
             <h2>Our Team</h2>
             <div class="team-members">
                 <div class="team-member">
-                    <img src="images/daneil.jpg" alt="Daneil">
+                    <img src="images/team-member-1.jpg" alt="Daneil">
                     <button onclick="showPopup('daneil')">Daneil</button>
                     <div id="popup-daneil" class="popup">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup('daneil')">&times;</span>
-                            <p>Daneil has been with Razor Sharp for 2 years, specializing in classic cuts and modern styles.</p>
+                            <p>Daneil is a skilled barber with 2 years of experience at Razor Sharp. Specializing in modern haircuts, he is dedicated to mastering contemporary styles and techniques. Daneil's commitment to excellence ensures that every client leaves the shop looking sharp and stylish.</p>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/tristyn.jpg" alt="Tristyn">
+                    <img src="images/team-member-2.jpg" alt="Tristyn">
                     <button onclick="showPopup('tristyn')">Tristyn</button>
                     <div id="popup-tristyn" class="popup">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup('tristyn')">&times;</span>
-                            <p>Tristyn is an expert in trendy and fashionable cuts, having worked with Razor Sharp for 5 years.</p>
+                            <p>Tristyn has been part of the Razor Sharp team for 5 years. With a versatile skill set, he excels in both classic and modern haircuts, including fades, tapers, and creative designs. Tristyn's innovative approach and attention to detail have earned him a loyal clientele.</p>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/terrell.jpg" alt="Terrell">
+                    <img src="images/team-member-3.jpg" alt="Terrell">
                     <button onclick="showPopup('terrell')">Terrell</button>
                     <div id="popup-terrell" class="popup">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup('terrell')">&times;</span>
-                            <p>Terrell excels in both traditional and contemporary haircuts, with 6 years at Razor Sharp.</p>
+                            <p>With 6 years of experience, Terrell is a seasoned barber at Razor Sharp. He offers a wide range of haircut styles, from traditional cuts to intricate designs. Terrell's expertise in fades, mohawks, and precision cuts makes him a top choice for clients seeking high-quality grooming.</p>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/unc.jpg" alt="Unc">
+                    <img src="images/team-member-4.jpg" alt="Unc">
                     <button onclick="showPopup('unc')">Unc</button>
                     <div id="popup-unc" class="popup">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup('unc')">&times;</span>
-                            <p>Unc brings 20 years of experience, offering a wide range of styles and exceptional service.</p>
+                            <p>Unc is a master barber with over 20 years of experience, making him a cornerstone of Razor Sharp. Known for his expertise in classic cuts and traditional shaves, Unc brings a wealth of knowledge and skill to the shop. His long-standing presence has made him a trusted and respected figure in the community.</p>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/gabe.jpg" alt="Gabe">
+                    <img src="images/team-member-5.jpg" alt="Gabe">
                     <button onclick="showPopup('gabe')">Gabe</button>
                     <div id="popup-gabe" class="popup">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup('gabe')">&times;</span>
-                            <p>Gabe is the newest member, specializing in fresh and modern cuts, with 1 year at Razor Sharp.</p>
+                            <p>Gabe is a talented young barber with 1 year of experience at Razor Sharp. Despite being new to the field, he has quickly gained a reputation for his keen eye for detail and modern haircutting techniques. Gabe is committed to continuous learning and delivering fresh, stylish looks to his clients.</p>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
-                    <img src="images/jermaine.jpg" alt="Jermaine">
+                    <img src="images/team-member-6.jpg" alt="Jermaine">
                     <button onclick="showPopup('jermaine')">Jermaine</button>
                     <div id="popup-jermaine" class="popup">
                         <div class="popup-content">
                             <span class="close" onclick="closePopup('jermaine')">&times;</span>
-                            <p>Jermaine is known for his creative styles and precision, having been with Razor Sharp for 4 years.</p>
+                            <p>Jermaine has been with Razor Sharp for 4 years, specializing in a variety of haircut styles, including fades, undercuts, and creative designs. His artistic vision and dedication to providing top-notch service make him a go-to barber for clients seeking a distinctive and polished look.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <hr>
-        <section id="booking-section" class="booking">
+        <section id="booking" class="booking">
             <h2>Book an Appointment</h2>
             <div class="appointment-section">
                 <div class="appointment-calendar">
-                    <h3>Select a Barber</h3>
-                    <select id="barber">
+                    <label for="barber">Select a Barber</label>
+                    <select id="barber" name="barber">
+                        <option value="">Select a Barber</option>
                         <option value="daneil">Daneil</option>
                         <option value="tristyn">Tristyn</option>
                         <option value="terrell">Terrell</option>
@@ -134,12 +137,13 @@
                     </select>
                 </div>
                 <div class="appointment-calendar">
-                    <h3>Select Date</h3>
-                    <input type="date" id="date">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date">
                 </div>
-                <div class="appointment-calendar">
-                    <h3>Select Time</h3>
-                    <select id="time">
+                <div class="time-slots">
+                    <label for="time">Select Time</label>
+                    <select id="time" name="time">
+                        <option value="">Select Time</option>
                         <option value="9:00 AM">9:00 AM</option>
                         <option value="9:30 AM">9:30 AM</option>
                         <option value="10:00 AM">10:00 AM</option>
@@ -160,10 +164,6 @@
                         <option value="5:30 PM">5:30 PM</option>
                     </select>
                 </div>
-                <div class="appointment-calendar">
-                    <h3>Number of People</h3>
-                    <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" max="4" value="1">
-                </div>
             </div>
             <div class="details-section" id="details-section">
                 <h3>Enter Your Details</h3>
@@ -178,43 +178,85 @@
                     <textarea id="message" name="message" placeholder="Enter your question or message"></textarea>
                     <button type="submit">Submit</button>
                 </form>
-                <div id="confirmation-popup" class="confirmation-popup">
-                    <div class="confirmation-content">
-                        <p class="confirmation-message">A Confirmation Has Been Sent</p>
-                        <p class="confirmation-text">Please confirm the appointment in your inbox</p>
-                        <input type="email" class="confirmation-email" placeholder="email@figmasfakedomain.net">
-                        <button onclick="confirmAppointment()">Resend Confirmation</button>
-                    </div>
-                </div>
             </div>
         </section>
+        <div id="confirmation-popup" class="confirmation-popup">
+            <div class="confirmation-content">
+                <p class="confirmation-message">A Confirmation Has Been Sent</p>
+                <p class="confirmation-text">Please confirm the appointment in your inbox</p>
+                <input type="email" id="confirmation-email" name="confirmation-email" placeholder="email@figmasfakedomain.net">
+                <button onclick="resendConfirmation()">Resend Confirmation</button>
+            </div>
+        </div>
+        <hr>
         <section id="about-us" class="about-us">
             <h2>~ About Us ~</h2>
             <p>Welcome to Razor Sharp Barber Shop, your trusted grooming destination for 15 years! Our experienced barbers specialize in timeless styles and modern trends, ensuring every cut is sharp and every shave is smooth. At Razor Sharp, we pride ourselves on offering affordable services without compromising on quality. Conveniently located and wheelchair accessible, our welcoming atmosphere makes every visit enjoyable. Whether you need a quick trim or a complete makeover, we’re here to keep you looking your best. Come experience the tradition and skill that have made us a community favourite for over a decade.</p>
         </section>
         <hr>
         <section id="location-hours" class="location-hours">
-            <h2>Location and Hours</h2>
-            <div class="location">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.360839392231!2d-79.21978008419116!3d43.79301167911695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d361307346cf%3A0xd74d6f2297983fa0!2s1834%20Morningside%20Ave%2C%20Scarborough%2C%20ON%20M1X%202E5%2C%20Canada!5e0!3m2!1sen!2sin!4v1622848964960!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.7261287810053!2d-79.2329163845019!3d43.80349857911686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3a53f62b2b5%3A0xb6ff7b0ff45b8e4c!2s1834%20Morningside%20Rd%2C%20Scarborough%2C%20ON%20M1X%201V7%2C%20Canada!5e0!3m2!1sen!2sus!4v1688995604984!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="hours">
-                <h3>Our Hours</h3>
-                <p>Mon-Fri: <span>9AM-6PM</span></p>
-                <p>Saturday: <span>10AM-4PM</span></p>
-                <p>Sunday: <span>CLOSED</span></p>
+                <h2>Our Hours</h2>
+                <div class="hour-item">
+                    <p class="day">Mon-Fri:</p>
+                    <p class="time">9AM-6PM</p>
+                </div>
+                <div class="hour-item">
+                    <p class="day">Saturday:</p>
+                    <p class="time">10AM-4PM</p>
+                </div>
+                <div class=" hour-item">
+                    <p class="day">Sunday:</p>
+                    <p class="time">CLOSED</p>
+                </div>
             </div>
         </section>
-        <footer>
-            <div class="social-icons">
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
-            </div>
-            <p>&copy; 2024 Razor Sharp</p>
-        </footer>
     </main>
-    <script src="script.js"></script>
+    <footer>
+        <p>Razor Sharp</p>
+        <div class="social-icons">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/youtube-icon.png" alt="YouTube"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+        function showPopup(id) {
+            document.getElementById('popup-' + id).style.display = 'block';
+        }
+
+        function closePopup(id) {
+            document.getElementById('popup-' + id).style.display = 'none';
+        }
+
+        function showConfirmationPopup() {
+            document.getElementById('confirmation-popup').style.display = 'block';
+        }
+
+        function closeConfirmationPopup() {
+            document.getElementById('confirmation-popup').style.display = 'none';
+        }
+
+        function resendConfirmation() {
+            const email = document.getElementById('confirmation-email').value;
+            alert(`Confirmation email sent to ${email}`);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('date');
+            dateInput.addEventListener('input', function() {
+                const dateValue = new Date(dateInput.value);
+                if (dateValue.getDay() === 0) { // 0 is Sunday
+                    alert('Sundays are not selectable');
+                    dateInput.value = '';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
