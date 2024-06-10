@@ -247,27 +247,71 @@ hr {
     display: none;
 }
 
-form {
+.booking {
+    padding: 40px;
+    text-align: center;
+}
+
+.booking h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.appointment-section {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.appointment-calendar,
+.details-section {
+    margin: 20px 0;
+}
+
+.appointment-calendar select,
+.appointment-calendar .calendar,
+.appointment-calendar .time-slots {
+    display: block;
+    margin: 10px auto;
+}
+
+.appointment-calendar h3 {
+    margin-bottom: 10px;
+}
+
+.details-section form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form label,
-form input,
-form select,
-form textarea,
-form button {
+.details-section form label,
+.details-section form input,
+.details-section form select,
+.details-section form textarea,
+.details-section form button {
     width: 80%;
     margin: 10px 0;
 }
 
-form button {
+.details-section form input,
+.details-section form select,
+.details-section form textarea {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.details-section form button {
     background-color: #444;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    font-size: 1.2em;
+}
+
+.details-section form button:hover {
+    background-color: #555;
 }
 
 form .confirmation {
