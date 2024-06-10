@@ -140,6 +140,12 @@ footer {
 footer p {
     margin: 0;
 }
+.about-us {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
 
 .about-us h2 {
     margin-bottom: 20px;
