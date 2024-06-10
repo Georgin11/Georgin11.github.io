@@ -285,6 +285,7 @@ footer p {
 .appointment-field {
     flex: 1;
     padding: 10px;
+    text-align: center;
 }
 
 .appointment-field label {
@@ -295,7 +296,7 @@ footer p {
 
 .appointment-field select,
 .appointment-field input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     font-size: 1.2em;
 }
