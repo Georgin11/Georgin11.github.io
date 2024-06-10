@@ -264,7 +264,6 @@ footer p {
 .team-member .description {
     display: none;
 }
-
 .booking {
     padding: 40px;
     text-align: center;
@@ -283,23 +282,31 @@ footer p {
     justify-content: space-between;
 }
 
-.appointment-calendar,
+.appointment-field {
+    flex: 1;
+    padding: 10px;
+}
+
+.appointment-field label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.appointment-field select,
+.appointment-field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
 .details-section {
     margin: 20px 0;
 }
 
-.appointment-calendar select,
-.appointment-calendar .calendar,
-.appointment-calendar .time-slots {
-    display: block;
-    margin: 10px auto;
-    width: 80%;
-    padding: 20px;
-    font-size: 1.5em;
-}
-
-.appointment-calendar h3 {
+.details-section h3 {
     margin-bottom: 10px;
+    font-size: 2em;
 }
 
 .details-section form {
@@ -321,7 +328,7 @@ footer p {
 .details-section form select,
 .details-section form textarea {
     padding: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .details-section form button {
